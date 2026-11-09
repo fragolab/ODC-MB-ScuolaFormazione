@@ -1,0 +1,91 @@
+# =====================================================================
+#  .gitignore — modalità "lista bianca"
+#  Tutto è escluso per impostazione predefinita; si includono solo
+#  i file e le cartelle elencati nella sezione INCLUSIONI con il "!".
+# =====================================================================
+#
+#  ISTRUZIONI
+#
+#  1. Regola base: "*" esclude ogni file e cartella.
+#     "!" davanti a un percorso lo re-include.
+#     L'ordine conta: vale l'ultima regola che corrisponde.
+#
+#  2. Includere un file nella cartella principale:
+#        !nomefile.pdf
+#
+#  3. Includere un file dentro una sottocartella:
+#     Git non entra nelle cartelle escluse, quindi va re-inclusa
+#     prima la cartella, poi il file:
+#        !2026 11 17 contenzioso 1/
+#        !2026 11 17 contenzioso 1/slide.md
+#     (la riga "!*/" qui sotto re-include già tutte le cartelle,
+#      perciò di norma basta indicare il file)
+#
+#  4. Includere un'intera sottocartella con tutto il contenuto:
+#        !2026 11 17 contenzioso 1/**
+#
+#  5. Includere per estensione (in tutte le cartelle):
+#        !*.md
+#
+#  6. Spazi e caratteri speciali: i nomi con spazi si scrivono così
+#     come sono, senza virgolette. Parentesi tonde e punti non
+#     richiedono escape; "[", "]", "*", "?", "!" e "#" a inizio riga
+#     vanno preceduti da "\".
+#
+#  7. Verifiche utili dal terminale:
+#        git status                      -> cosa verrebbe incluso
+#        git check-ignore -v "percorso"  -> quale regola esclude un file
+#        git ls-files                    -> file già tracciati
+#
+#  8. Attenzione: un file già entrato in un commit resta tracciato
+#     anche se poi lo si esclude qui. Per smettere di tracciarlo
+#     (senza cancellarlo dal disco):
+#        git rm --cached "percorso"
+#
+# =====================================================================
+
+# --- Esclusione generale ---------------------------------------------
+*
+
+# --- Cartelle: re-incluse per permettere di selezionare i file interni.
+#     Le cartelle vuote (o con soli file esclusi) non compaiono in Git.
+!*/
+
+# --- Sempre inclusi --------------------------------------------------
+!.gitignore
+!index.md
+
+# --- INCLUSIONI (aggiungere qui sotto) -------------------------------
+# !esempio.md
+# !2026 11 17 contenzioso 1/esempio.md
+
+# Lezione 1 — 17 novembre 2026: slide
+!2026 11 17 contenzioso 1/2026 11 17 Processo tributario 1.pdf
+!2026 11 17 contenzioso 1/2026 11 17 Processo tributario 1.html
+
+# Lezione 1: atti (Word da scaricare + bozze Markdown per GitHub Pages)
+!2026 11 17 contenzioso 1/2026 Ricorso.docx
+!2026 11 17 contenzioso 1/2026 Motivi tipici.docx
+!2026 11 17 contenzioso 1/2026 Istanza cautelare.docx
+!2026 11 17 contenzioso 1/2026 Procura alle liti.docx
+!2026 11 17 contenzioso 1/Bozze/2026 Ricorso.md
+!2026 11 17 contenzioso 1/Bozze/2026 Motivi tipici.md
+!2026 11 17 contenzioso 1/Bozze/2026 Istanza cautelare.md
+!2026 11 17 contenzioso 1/Bozze/2026 Procura alle liti.md
+
+# Lezione 2 — 19 novembre 2026: slide
+!2026 11 19 contenzioso 2/2026 11 19 Processo tributario 2.pdf
+!2026 11 19 contenzioso 2/2026 11 19 Processo tributario 2.html
+
+# Lezione 2: atti (Word da scaricare + bozze Markdown per GitHub Pages)
+!2026 11 19 contenzioso 2/2026 Appello.docx
+!2026 11 19 contenzioso 2/2026 Controdeduzioni in appello.docx
+!2026 11 19 contenzioso 2/Bozze/2026 Appello.md
+!2026 11 19 contenzioso 2/Bozze/2026 Controdeduzioni in appello.md
+
+# Lezione 2: pronunce
+!2026 11 19 contenzioso 2/Pronunce/Cass_18962_2005.pdf
+!2026 11 19 contenzioso 2/Pronunce/Cass_16829_2007.pdf
+!2026 11 19 contenzioso 2/Pronunce/Cass_22675_2012.pdf
+!2026 11 19 contenzioso 2/Pronunce/Cass_4443_2015.pdf
+!2026 11 19 contenzioso 2/Pronunce/Cass_3800_2025.pdf
