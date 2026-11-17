@@ -21,4 +21,4 @@ Se lo studio per l'esame unisce parte generale e processo, i manuali più adotta
 
 ## Testi di approfondimento
 
-- **Alberto Marcheselli, \*La prova nel nuovo processo tributario\* (Giuffrè, 2024):** monografia ideale per chi deve approfondire le novità sul regime probatorio (onere della prova, testimonianza scritta, divieti probatori).
+- **Alberto Marcheselli, La prova nel nuovo processo tributario (Giuffrè, 2024):** monografia ideale per chi deve approfondire le novità sul regime probatorio (onere della prova, testimonianza scritta, divieti probatori).
