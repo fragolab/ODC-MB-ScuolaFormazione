@@ -45,3 +45,7 @@ Materiali delle lezioni sul processo tributario, novembre 2026.
 | Cass. n. 22675/2012 | [PDF](2026%2011%2019%20contenzioso%202/Pronunce/Cass_22675_2012.pdf) |
 | Cass. n. 4443/2015 | [PDF](2026%2011%2019%20contenzioso%202/Pronunce/Cass_4443_2015.pdf) |
 | Cass. n. 3800/2025 | [PDF](2026%2011%2019%20contenzioso%202/Pronunce/Cass_3800_2025.pdf) |
+
+## Per approfondire
+
+- [Manuali sul processo tributario](Manuali%20sul%20processo%20tributario.html) — manuali specifici, manuali istituzionali e testi di approfondimento

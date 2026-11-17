@@ -54,6 +54,7 @@
 # --- Sempre inclusi --------------------------------------------------
 !.gitignore
 !index.md
+!Manuali sul processo tributario.md
 
 # --- INCLUSIONI (aggiungere qui sotto) -------------------------------
 # !esempio.md
